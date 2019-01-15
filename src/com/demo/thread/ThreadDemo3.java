@@ -1,7 +1,7 @@
 package com.demo.thread;
 /**
- * synchronizedµÄÊ¹ÓÃ
- * Ò»¸öÏß³Ì·ÃÎÊÒ»¸ö¶ÔÏóÖĞµÄsynchronized(this)Í¬²½´úÂë¿éÊ±£¬ÆäËûÊÔÍ¼·ÃÎÊ¸Ã¶ÔÏóµÄÏß³Ì½«±»×èÈû¡£
+ * synchronizedçš„ä½¿ç”¨
+ * ä¸€ä¸ªçº¿ç¨‹è®¿é—®ä¸€ä¸ªå¯¹è±¡ä¸­çš„synchronized(this)åŒæ­¥ä»£ç å—æ—¶ï¼Œå…¶ä»–è¯•å›¾è®¿é—®è¯¥å¯¹è±¡çš„çº¿ç¨‹å°†è¢«é˜»å¡ã€‚
  * @author Administrator
  */
 public class ThreadDemo3 implements Runnable{
@@ -28,12 +28,12 @@ public class ThreadDemo3 implements Runnable{
 	
 	public static void main(String[] args) {
 		ThreadDemo3 th = new ThreadDemo3();
-		// Á½¸ö²»Í¬µÄÏß³Ì ·ÃÎÊÍ¬Ò»¶ÔÏóµÄÍ¬²½´úÂë¿éÊ±£¬ Ö»ÄÜ´ıÆäÖĞÒ»¸öÏß³Ì½áÊø·ÃÎÊºó£¬ÁíÒ»¸öÏß³Ì²ÅÄÜ·ÃÎÊ£»
-		Thread t1 = new Thread(th,"½ø³Ì1");
-		Thread t2 = new Thread(th,"½ø³Ì2");
-		//Èç¹ûÊÇÁ½¸ö²»Í¬Ïß³Ì ·ÃÎÊ·ÇÍ¬Ò»¶ÔÏóµÄÍ¬²½´úÂë¿éÊ±£¬Ôò²»ÊÜÓ°Ïì£¬Á½¸ö¿ÉÒÔÍ¬Ê±·ÃÎÊ
-		//Thread t1 = new Thread(new ThreadDemo3(),"½ø³Ì1");
-		//Thread t2 = new Thread(new ThreadDemo3(),"½ø³Ì2");
+		// ä¸¤ä¸ªä¸åŒçš„çº¿ç¨‹ è®¿é—®åŒä¸€å¯¹è±¡çš„åŒæ­¥ä»£ç å—æ—¶ï¼Œ åªèƒ½å¾…å…¶ä¸­ä¸€ä¸ªçº¿ç¨‹ç»“æŸè®¿é—®åï¼Œå¦ä¸€ä¸ªçº¿ç¨‹æ‰èƒ½è®¿é—®ï¼›
+		Thread t1 = new Thread(th,"çº¿ç¨‹1");
+		Thread t2 = new Thread(th,"çº¿ç¨‹2");
+		//å¦‚æœæ˜¯ä¸¤ä¸ªä¸åŒçº¿ç¨‹ è®¿é—®éåŒä¸€å¯¹è±¡çš„åŒæ­¥ä»£ç å—æ—¶ï¼Œåˆ™ä¸å—å½±å“ï¼Œä¸¤ä¸ªå¯ä»¥åŒæ—¶è®¿é—®
+		//Thread t1 = new Thread(new ThreadDemo3(),"çº¿ç¨‹1");
+		//Thread t2 = new Thread(new ThreadDemo3(),"çº¿ç¨‹2");
 		t1.start();
 		t2.start();
 	}
